@@ -1,0 +1,6 @@
+.nav__list {
+    display: flex;
+    width: auto;
+    height: 50px;
+    list-style: none;
+}
