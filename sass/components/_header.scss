@@ -6,7 +6,7 @@
 }
 .nav__list {
     display: flex;
-    color:$background;
+    color:$red-s;
     list-style: none;
     gap:20px;
     padding: 16px 32px;
@@ -15,8 +15,8 @@
 
 .logo__container {
  display: flex;
- color: $background;
- fill: $background;
+ color: $red-s;
+ fill: $red-s;
  justify-content: center;
  align-content: center;
  text-align: center;
@@ -26,6 +26,6 @@ padding: 17px 250px 300px 17px;
 }
 
 .basket__icon {
-    fill:$background;
+    fill:$red-s;
     padding: 11px 32px;
 }

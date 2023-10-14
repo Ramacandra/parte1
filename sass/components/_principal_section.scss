@@ -1,9 +1,9 @@
 .main {
-    background-color: $background;
-    height: 1000px;
+    background-color: $red-s;
+    height: 2000px;
 }
 .principal-section {
-    background-color: $background;
+    background-color: $red-s;
     position: relative;
 }
 .principal-section__title {
@@ -16,7 +16,7 @@
     justify-content: center;
     text-align:center;
     text-transform: uppercase;
-    color:$primary-color;
+    color:$white-s;
     position: absolute; 
     top: 50%; 
     left: 50%; 
@@ -35,14 +35,6 @@
     z-index: 0;
 }
 
-/*.principal-section__border {
-    fill: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    top:103px;
-    left: 600px;
-}*/
-
-
 .principal-section__text {
     display: flex;
     width: 300px;
@@ -50,10 +42,10 @@
    line-height: 1.2;
    letter-spacing: 0.04em;
    text-align:justify;
-   color:$primary-color;
+   color:$white-s;
    position: absolute;
-   top: 60%;
-   left: 7%;
+   top: 55%;
+   left: 10%;
 }
 
 .fruit-banana {
@@ -70,5 +62,79 @@
     right: 21%;
 } 
 
+.watermelon__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 249px;
+    height: 387px;
+    background-color: $green-s;
+    border-radius: 500px;
+    padding: 28px 25px 15px 24px;
+    position: absolute;
+    left: 15%;
+    bottom: -39%;
+}
 
+.watermelon__title {
+    width: 24px;
+    height: 14px;
+    font-size: 12px;
+    font-weight:400;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    color:$white-s;
+    text-align: center; 
+    padding-bottom: 61px;  
+    margin: 0;
+}
 
+.watermelon__text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+   text-align: center;
+   text-transform: uppercase;
+   color: $white-s;
+   padding: 0px 20px 20px 20px;
+   margin: 0;
+}
+
+.strawberry-basket__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 249px;
+    height: 387px;
+    background-color: $yellow-s;
+    border-radius: 500px;
+    padding: 28px 35px 40px 35px;
+    position: absolute;
+    left: 70%;
+    bottom: 0%;
+
+}
+
+.strawberry-basket__title {
+    width: 24px;
+    height: 14px;
+    font-size: 12px;
+    font-weight:400;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    color:$white-s;
+    text-align: center; 
+}
+
+.strawberry-basket__text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+   text-align: center;
+   text-transform: uppercase;
+   color: $white-s;
+   padding: 0px 20px 0px 20px;
+   margin: 0;
+}
