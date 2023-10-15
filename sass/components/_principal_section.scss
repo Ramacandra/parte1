@@ -27,12 +27,50 @@
 .principal-section__image {
     border-radius: 500px;
     justify-content: center;
-    margin: auto;
-    display: block; 
+    z-index: 0;
+}
+
+.prueba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 485px;
+    height: 735px;
     margin: auto;
     position: relative;
-    top: 120px;
+    top:115px;
+    border-top: 1px transparent;
+    border-bottom: solid 1px;
+    border-color: $white-s;
+    border-radius: 500px;
     z-index: 0;
+}
+
+.principal-section__button {
+    display: flex;
+    flex-wrap: wrap;
+    width: 114px;
+    height: 114px;
+    border-color: transparent;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 28px;
+    line-height:1;
+    letter-spacing: 0.04em;
+    color: $red-s;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 25px 9px 20px 9px;
+    transform: rotate(-14deg);
+    transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    cursor: pointer;
+    position: absolute;
+    left: 46%;
+    top:105%;
+
+    &:hover {
+        color:$green-s
+    }
 }
 
 .principal-section__text {
@@ -51,15 +89,15 @@
 .fruit-banana {
     list-style: none;
     position: absolute;
-    top:22%;
-    left: 18%;
+    top:25%;
+    left: 22%;
 }
 
 .fruit-strawberry {
     list-style: none;
     position: absolute;
-    top:0;
-    right: 21%;
+    top:5%;
+    right: 22%;
 } 
 
 .watermelon__container {
@@ -137,4 +175,41 @@
    color: $white-s;
    padding: 0px 20px 0px 20px;
    margin: 0;
+}
+
+.hashtag__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    position: absolute;
+    left: 67%;
+    top:110%;
+}
+
+.hashtag__list {
+    list-style:none;
+    display: flex;
+    margin: 0;
+    gap: 8px;
+}
+
+.hashtag__list-two {
+    list-style:none;
+    display: flex;
+    margin-top: 8px;
+    margin-left: 35px;
+    gap: 8px;
+}
+
+
+.hashtag__item {
+    border: solid 1px;
+    border-color: $white-s;
+    border-radius: 25px;
+    padding: 12px 32px;
+    color: $white-s;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.1;
 }
