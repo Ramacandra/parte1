@@ -20,7 +20,7 @@ line-height: 1.2;
 letter-spacing: 0.04;
 }
 
-.logo__container {
+.logo{
  display: flex;
  color: $red-s;
  fill: $red-s;
@@ -29,10 +29,31 @@ letter-spacing: 0.04;
  text-align: center;
  text-transform: uppercase;
  gap: 8px;
-padding: 17px 250px 300px 17px;
+padding: 17px 330px  0px 90px;
+
+&__icon {
+    fill:$red-s;
+}
+
+&__name {
+    color:$red-s;
+    text-decoration: none;
+}
 }
 
 .basket__icon {
     fill:$red-s;
     padding: 11px 32px;
+}
+
+@media screen and (max-width:768px) {
+    .nav {
+        width: 768px;
+    }
+    .nav__list{
+        gap: 16px;
+    }
+    .logo{
+        padding: 17px 170px 0px 0px;
+     }
 }

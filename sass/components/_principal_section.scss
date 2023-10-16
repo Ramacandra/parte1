@@ -1,6 +1,6 @@
 .main {
     background-color: $red-s;
-    height: 2000px;
+    height: 2000px;  /*tamaño temporal para trabajar*/
 }
 .principal-section {
     background-color: $red-s;
@@ -30,7 +30,7 @@
     z-index: 0;
 }
 
-.prueba {
+.prueba{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,11 +39,12 @@
     margin: auto;
     position: relative;
     top:115px;
-    border-top: 1px transparent;
-    border-bottom: solid 1px;
-    border-color: $white-s;
     border-radius: 500px;
+    border-top: transparent;
+    border-bottom: solid 1px $white-s;
+    border-top: solid 1px $white-s;
     z-index: 0;
+ 
 }
 
 .principal-section__button {
@@ -89,15 +90,15 @@
 .fruit-banana {
     list-style: none;
     position: absolute;
-    top:25%;
+    top:27%;
     left: 22%;
 }
 
 .fruit-strawberry {
     list-style: none;
     position: absolute;
-    top:5%;
-    right: 22%;
+    top:7%;
+    right: 21%;
 } 
 
 .watermelon__container {
@@ -151,7 +152,6 @@
     position: absolute;
     left: 70%;
     bottom: 0%;
-
 }
 
 .strawberry-basket__title {
@@ -212,4 +212,51 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.1;
+}
+
+
+@media screen and (max-width:768px) {
+.principal-section {
+    width: 768px;
+}
+
+.principal-section__title {
+    width: 730px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.08;
+    top: 45%; 
+    left: 50%; 
+    transform: translate(-50%,  -155%); 
+    }
+    .fruit-banana {
+        top:23%;
+        left: 1%;
+    }
+    
+    .fruit-strawberry {
+        top:8%;
+        right: 3%;
+    } 
+
+    .principal-section__text {
+       top: 125%;
+       left: 7%;
+    } 
+    .strawberry-basket__container {
+        left: 60%;
+        bottom: -80%;
+    }  
+    .watermelon__container {
+        left: 8%;
+        bottom: -105%;
+    }
+    .hashtag__container {
+        left: 53%;
+        top:187%;
+    }
+    
+.principal-section__button {
+    left: 42%;
+}
 }
