@@ -16,8 +16,6 @@
 .nav__link{
 color: $red-s;
 text-decoration: none;
-line-height: 1.2;
-letter-spacing: 0.04;
 }
 
 .logo{
@@ -29,7 +27,7 @@ letter-spacing: 0.04;
  text-align: center;
  text-transform: uppercase;
  gap: 8px;
-padding: 17px 330px  0px 90px;
+padding: 17px 550px 0px 350px;
 
 &__icon {
     fill:$red-s;
@@ -38,12 +36,19 @@ padding: 17px 330px  0px 90px;
 &__name {
     color:$red-s;
     text-decoration: none;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
 }
 }
 
 .basket__icon {
     fill:$red-s;
     padding: 11px 32px;
+}
+
+.toggle {
+    display: none;
 }
 
 @media screen and (max-width:768px) {
@@ -57,3 +62,32 @@ padding: 17px 330px  0px 90px;
         padding: 17px 170px 0px 0px;
      }
 }
+
+@media screen and (max-width:376px) {
+    .nav__list {
+        padding: 0;
+    }
+    .nav {
+        width: 375px;  
+    }
+    .nav__list {
+        display: none;
+    }
+    .logo{
+        padding: 17px 90px 0px 0px;
+     }
+     
+     .logo__name {
+        font-weight: 700;
+     }
+     .basket__icon{
+        display: none;
+     }
+     .toggle {
+        display: flex;
+        padding:13px 20px 13px 0px ;
+        fill: $red-s;
+        border: transparent;
+        background-color: transparent;
+     }
+    }

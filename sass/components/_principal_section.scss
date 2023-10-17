@@ -30,7 +30,7 @@
     z-index: 0;
 }
 
-.prueba{
+.container__principal-image{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,6 @@
     border-radius: 500px;
     border-top: transparent;
     border-bottom: solid 1px $white-s;
-    border-top: solid 1px $white-s;
     z-index: 0;
  
 }
@@ -76,8 +75,9 @@
 
 .principal-section__text {
     display: flex;
-    width: 300px;
+    width: 255px;
     height: auto;
+    font-size: 14px;
    line-height: 1.2;
    letter-spacing: 0.04em;
    text-align:justify;
@@ -111,8 +111,8 @@
     border-radius: 500px;
     padding: 28px 25px 15px 24px;
     position: absolute;
-    left: 15%;
-    bottom: -39%;
+    left: 12%;
+    bottom: -30%;
 }
 
 .watermelon__title {
@@ -222,7 +222,6 @@
 
 .principal-section__title {
     width: 730px;
-    font-weight: 500;
     font-size: 50px;
     line-height: 1.08;
     top: 45%; 
@@ -259,4 +258,76 @@
 .principal-section__button {
     left: 42%;
 }
+}
+
+@media screen and (max-width:376px) {
+    .principal-section {
+        width: 374px;
+    }
+    .principal-section__title {
+        width: 370px;
+        font-size: 28px;
+        line-height: 1;
+        transform: translate(-50%,  -150%); 
+    }
+    .fruit-banana {
+        top:23%;
+        left: 0;
+    }
+    .fruit-banana__img {
+        width: 90px;
+        height: 65px;
+    }
+    
+    .fruit-strawberry {
+        top:11%;
+        right: -1%;
+    } 
+    .fruit-strawberry__img {
+        width: 65px;
+        height: 65px;
+    }
+    .principal-section__image {
+        width: 311px;
+        height: 484px;
+    }
+    .container__principal-image {
+        width: 330px;
+        height: 505px;
+        top:110px;
+    }
+
+    .principal-section__button {
+        width: 80px;
+        height: 80px;
+        font-size: 20px;
+        line-height: 1;
+        padding: 18px 9px 20px 9px;
+        left: 40%;
+        top: 110%;
+    }
+    .principal-section__text {
+        top: 133%;
+        left: 10%;
+     } 
+
+     .watermelon__container {
+        left: 18%;
+        bottom: -140%;
+    }
+     .hashtag__container {
+        left: 2%;
+        top:250%;
+    }
+
+    .hashtag__list-two {
+        margin-left: 15px;
+    }
+    
+
+    .strawberry-basket__container {
+        left: 17%;
+        bottom: -255%;
+    }
+   
 }
