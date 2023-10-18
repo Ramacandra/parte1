@@ -38,30 +38,18 @@
         </svg>
       </a>
 
-      <div js-menu-container class="menu__container" id="mobile-menu">
-      <button
-      class="menu-toggle js-open-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
+      <div class="container">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
         <svg class="toogle-icon" width="24" height="24">
           <use href="./images/icons/icons.svg#icon-menu-left"></use>
         </svg>
        </button>
 
-      </div>
-
-       <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
-        <svg
-          class="close-icon"
-          width="24"
-          height="24">
-        <use href="./images/icons/icons.svg#icon-closed"> </use>
-      </svg> 
-    </button>
-
-      <ul class="mobile-menu is-open">
+       <ul  class="menu">
         <li class="mobile-menu__item"><a href="#how-it-works" class="link">How It Workst</a>
         </li>
         <li class="mobile-menu__item"><a href="#fruits" class="link">Fruits</a>
@@ -72,9 +60,8 @@
           <svg width="28" height="28"> 
             <use href="./images/icons/icons.svg#icon-basket"> </use>
           </svg></a></li>
-      </ul>
+        </ul>
       </div>
-
     </header>
     <main class="main">
       <section class="principal-section"> 
@@ -120,12 +107,37 @@
       </section>
     </main>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+      <a class="button-closed">
+      <svg 
+        width="24"
+        height="24">
+      <use href="./images/icons/icons.svg#icon-closed"> </use>
+    </svg> </a>
+  </button>
+
+  <ul class="mobile-menu">
+      <li class="mobile-menu__item"><a href="#how-it-works" class="link">How It Workst</a>
+      </li>
+      <li class="mobile-menu__item"><a href="#fruits" class="link">Fruits</a>
+      </li>
+      <li class="mobile-menu__item"><a href="#contactas" class="link">Contacts</a>
+      </li>
+      <li ><a href="#main__gallery" class="link">
+        <svg width="28" height="28"> 
+          <use href="./images/icons/icons.svg#icon-basket"> </use>
+        </svg></a>
+      </li>
+    </ul>
+    </div>
+
     <script
     defer
     src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous">
 </script>
-  <script defer src="js/mobile-menu.js"></script>
+  <script defer src="./js/main.js"></script>
   </body>
 </html>
