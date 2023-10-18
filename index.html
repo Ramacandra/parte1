@@ -38,12 +38,41 @@
         </svg>
       </a>
 
-      <div class="menu__container js-menu.container" id="mobile-menu">
-        <button class="toggle js-close-menu">
-        <svg class="menu--left" width="24" height="24">
+      <div js-menu-container class="menu__container" id="mobile-menu">
+      <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+        <svg class="toogle-icon" width="24" height="24">
           <use href="./images/icons/icons.svg#icon-menu-left"></use>
         </svg>
-        </button>
+       </button>
+
+      </div>
+
+       <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+        <svg
+          class="close-icon"
+          width="24"
+          height="24">
+        <use href="./images/icons/icons.svg#icon-closed"> </use>
+      </svg> 
+    </button>
+
+      <ul class="mobile-menu is-open">
+        <li class="mobile-menu__item"><a href="#how-it-works" class="link">How It Workst</a>
+        </li>
+        <li class="mobile-menu__item"><a href="#fruits" class="link">Fruits</a>
+        </li>
+        <li class="mobile-menu__item"><a href="#contactas" class="link">Contacts</a>
+        </li>
+        <li ><a href="#main__gallery" class="link">
+          <svg width="28" height="28"> 
+            <use href="./images/icons/icons.svg#icon-basket"> </use>
+          </svg></a></li>
+      </ul>
       </div>
 
     </header>
@@ -52,7 +81,8 @@
         <div class="principal-section__container">
         <h1  class="principal-section__title">fresh harvest box <br> is your one-stop place for a delicious fruit basket</h1>
         
-        <div class="container__principal-image">
+        <div class="principal-section__container-image">
+        <img class="principal-section__border-image" src="./images/border.png" width="486" alt="border">
         <img class="principal-section__image" src="./images/lady.jpg" width="452" height="702" alt="lady-fruit">
         </div>
 
@@ -61,10 +91,10 @@
         <p class="principal-section__text">Our expertly curated fruit baskets are made with the freshest, highest quality fruits available. Whether you are looking for a healthy snack or a gift for a loved one, Fresh Harvest Box has got you covered.</p>
      
         <div class="fruit-banana">
-             <img class="fruit-banana__img" src="./images/bananas.png" width="184" alt="banana"> 
+             <img class="fruit-banana__img" src="./images/bananas.png" width="220" alt="banana"> 
         </div>
         <div class="fruit-strawberry">
-            <img class="fruit-strawberry__img" src="./images/strawberry.png" width="120" alt="strawberry">
+            <img class="fruit-strawberry__img" src="./images/strawberry.png" width="120" height="120" alt="strawberry">
         </div>
 
         <div class="watermelon__container">
@@ -89,5 +119,13 @@
         </div>
       </section>
     </main>
+
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous">
+</script>
+  <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -30,7 +30,7 @@
     z-index: 0;
 }
 
-.container__principal-image{
+.principal-section__container-image{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,11 +39,11 @@
     margin: auto;
     position: relative;
     top:115px;
-    border-radius: 500px;
-    border-top: transparent;
-    border-bottom: solid 1px $white-s;
     z-index: 0;
- 
+}
+
+.principal-section__border-image {
+ position: absolute;
 }
 
 .principal-section__button {
@@ -66,7 +66,7 @@
     cursor: pointer;
     position: absolute;
     left: 46%;
-    top:105%;
+    top:103%;
 
     &:hover {
         color:$green-s
@@ -84,21 +84,21 @@
    color:$white-s;
    position: absolute;
    top: 55%;
-   left: 10%;
+   left: 9%;
 }
 
 .fruit-banana {
     list-style: none;
     position: absolute;
-    top:27%;
-    left: 22%;
+    top:25%;
+    left: 20%;
 }
 
 .fruit-strawberry {
     list-style: none;
     position: absolute;
-    top:7%;
-    right: 21%;
+    top:5%;
+    right: 22%;
 } 
 
 .watermelon__container {
@@ -183,7 +183,7 @@
     width: 350px;
     position: absolute;
     left: 67%;
-    top:110%;
+    top:108%;
 }
 
 .hashtag__list {
@@ -229,8 +229,11 @@
     transform: translate(-50%,  -155%); 
     }
     .fruit-banana {
-        top:23%;
-        left: 1%;
+        top:24%;
+        left: 2%;
+    }
+    .fruit-banana__img{
+      width: 170px;
     }
     
     .fruit-strawberry {
@@ -262,7 +265,7 @@
 
 @media screen and (max-width:376px) {
     .principal-section {
-        width: 374px;
+        width: 375px;
     }
     .principal-section__title {
         width: 370px;
@@ -291,10 +294,14 @@
         width: 311px;
         height: 484px;
     }
-    .container__principal-image {
+    .principal-section__container-image {
         width: 330px;
         height: 505px;
         top:110px;
+    }
+    .principal-section__border-image{
+        width: 335px;
+        height: 509px;
     }
 
     .principal-section__button {
@@ -308,7 +315,7 @@
     }
     .principal-section__text {
         top: 133%;
-        left: 10%;
+        left: 16%;
      } 
 
      .watermelon__container {
@@ -323,8 +330,6 @@
     .hashtag__list-two {
         margin-left: 15px;
     }
-    
-
     .strawberry-basket__container {
         left: 17%;
         bottom: -255%;

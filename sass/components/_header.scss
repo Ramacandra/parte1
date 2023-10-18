@@ -46,10 +46,8 @@ padding: 17px 550px 0px 350px;
     fill:$red-s;
     padding: 11px 32px;
 }
+ 
 
-.toggle {
-    display: none;
-}
 
 @media screen and (max-width:768px) {
     .nav {
@@ -83,11 +81,48 @@ padding: 17px 550px 0px 350px;
      .basket__icon{
         display: none;
      }
-     .toggle {
-        display: flex;
-        padding:13px 20px 13px 0px ;
-        fill: $red-s;
-        border: transparent;
-        background-color: transparent;
-     }
+
+
+     .menu-toggle {
+        display: none;
+      }
     }
+
+    .menu-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      padding: 32px;
+      background-color: $red-s;
+      z-index: 999;
+    
+      transform: translateX(100%);
+      transition: transform 250ms ease-in-out;
+    }
+    
+    .menu-container.is-open {
+      transform: translateX(0);
+    }
+    
+    .menu-container .menu-toggle {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      color: $red-s;
+    }
+    
+    .mobile-menu {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    
+    .mobile-menu .link {
+      display: block;
+      padding: 10px;
+      color: $white-s;
+      text-decoration: none;
+    }
+    
